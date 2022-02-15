@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const StyledFlexBox = styled.div`
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 `
 
 const FlexContainer = (props) => {
