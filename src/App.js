@@ -1,16 +1,15 @@
 import "./App.css";
 import Wrapper from "./components/UI/Wrapper/Wrapper";
-import Card from "./components/UI/Card/Card";
 import GlobalStyles from "./GlobalStyles";
-// import { Colors } from "./GlobalStyles";
-const data = require('./components/assets/data.json');
+import SmallCardsContainer from "./components/UI/Card/SmallCardsContainer";
+
 
 function App() {
   return (
     <main className="App">
       <GlobalStyles />
       <Wrapper>
-        <Card data={data[0]} />
+        <SmallCardsContainer />
       </Wrapper>
     </main>
   );

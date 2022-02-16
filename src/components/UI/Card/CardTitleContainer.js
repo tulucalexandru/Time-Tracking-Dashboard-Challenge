@@ -11,6 +11,10 @@ const StyledTitleContainer = styled(FlexContainer)`
         display: block;
     }
 
+    h1 {
+      font-weight: 500;
+    }
+
 `
 
 const CardTitleContainer = ({title}) => {
