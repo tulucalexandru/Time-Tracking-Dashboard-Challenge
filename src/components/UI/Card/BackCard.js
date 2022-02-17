@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const StyledBackCard = styled.div`
   background-color: ${(props) => props.bgColor};
-  height: 250px;
+  height: 244px;
   border-radius: 25px;
   position: relative;
   display: flex;

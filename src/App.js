@@ -1,7 +1,8 @@
 import "./App.css";
 import Wrapper from "./components/UI/Wrapper/Wrapper";
 import GlobalStyles from "./GlobalStyles";
-import SmallCardsContainer from "./components/UI/Card/SmallCardsContainer";
+import MainContentWrapper from "./components/UI/General/MainContentWrapper";
+
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <main className="App">
       <GlobalStyles />
       <Wrapper>
-        <SmallCardsContainer />
+        <MainContentWrapper />
       </Wrapper>
     </main>
   );

@@ -17,14 +17,14 @@ const StyledCard = styled.div`
   
 `;
 
-const Card = ({ data, bgColor }) => {
+const Card = ({ item, bgColor }) => {
 
-  console.log(data);
+  // console.log(data);
   return (
     <BackCard bgColor={bgColor}>
         <StyledCard bgColor={Colors.darkBlue}>
-          <CardTitleContainer title={data.title} />
-          <CardDetails details={data.timeframes.weekly} />
+          <CardTitleContainer title={item.title} />
+          <CardDetails details={item.timeframes.weekly} />
         </StyledCard>
     </BackCard>
   );
