@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import FlexContainer from '../General/FlexContainer'
-import Button from './Button'
+import CardButton from './CardButton'
 
 const StyledButtonsContainer = styled(FlexContainer)`
     flex-direction: column;
@@ -12,12 +12,16 @@ const StyledButtonsContainer = styled(FlexContainer)`
     /* height: auto; */
 `
 
-const ButtonsContainer = () => {
+const ButtonsContainer = (props) => {
+
+  const clickHandler = (item) => {
+    // console.log(item);
+    props.clickHandler(item)
+  }
+  
   return (
     <StyledButtonsContainer>
-        <Button>Daily</Button>
-        <Button>Weekly</Button>
-        <Button>Monthly</Button>
+      {props.timeframes.map(item => <CardButton clickHandler={clickHandler} >{item}</CardButton>)}
     </StyledButtonsContainer>
   )
 }

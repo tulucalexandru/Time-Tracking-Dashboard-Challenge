@@ -14,11 +14,17 @@ const StyledUserBackcard = styled(FlexContainer)`
     border-radius: 25px;
 `
 
-const UserBackCard = () => {
+const UserBackCard = (props) => {
+
+  const clickHandler = (item) => {
+    // console.log(item);
+    props.clickHandler(item);
+  }
+
   return (
     <StyledUserBackcard>
       <UserCard />
-      <ButtonsContainer />
+      <ButtonsContainer   clickHandler={clickHandler}  timeframes={props.timeframes}/>
     </StyledUserBackcard>
   )
 }

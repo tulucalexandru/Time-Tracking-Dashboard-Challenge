@@ -14,7 +14,7 @@ const StyledBackCard = styled.div`
 `;
 
 const BackCard = (props) => {
-  console.log(props.bgColor);
+  // console.log(props.bgColor);
   return (
     <StyledBackCard bgColor={props.bgColor}>
       {props.children}
