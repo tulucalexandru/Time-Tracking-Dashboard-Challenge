@@ -8,6 +8,12 @@ const StyledWrapper = styled(FlexContainer)`
     background-color: ${Colors.veryDarkBlue};
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 800px) {
+      height: 100%;
+      padding-bottom: 25px;
+      padding-top: 25px;
+    }
 `
 
 const Wrapper = (props) => {

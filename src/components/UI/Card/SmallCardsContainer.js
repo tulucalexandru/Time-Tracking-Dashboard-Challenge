@@ -8,17 +8,19 @@ const StyledSmallCardsContainer = styled(FlexContainer)`
   flex-wrap: wrap;
   gap: 30px;
   width: calc(calc(253px * 3) + 30px * 2);
-
+  @media (max-width: 1100px) {
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
   /* background-color: red; */
 `;
 
 const SmallCardsContainer = (props) => {
 
-  // const bgColors = Colors.bgColors;
-
   return (
     <StyledSmallCardsContainer>
-      {props.data.map(item => <Card item={item} bgColor={item.bgcolor}/> )}
+      {props.data.map((item, index) => <Card key={index} item={item} bgColor={item.bgcolor}/> )}
     </StyledSmallCardsContainer>
   );
 };

@@ -12,11 +12,12 @@ const Button = (props) => {
 
 const clickHandler = (event) => {
   // console.log(event.target.outerText);
-  props.clickHandler(event.target.outerText)
+  props.clickHandler(event.target.value);
+  event.target.classList.add('active');
 }
 
   return (
-    <StyledButton onClick={clickHandler} className={classes}>{props.children}</StyledButton>
+    <StyledButton onClick={clickHandler} className={classes} value={props.children.toLowerCase()}>{props.children}</StyledButton>
   )
 }
 

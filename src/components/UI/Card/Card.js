@@ -19,12 +19,11 @@ const StyledCard = styled.div`
 
 const Card = ({ item, bgColor }) => {
 
-  // console.log(data);
   return (
     <BackCard bgColor={bgColor}>
         <StyledCard bgColor={Colors.darkBlue}>
           <CardTitleContainer title={item.title} />
-          <CardDetails details={item.timeframes.weekly} />
+          <CardDetails details={item.timeframes} />
         </StyledCard>
     </BackCard>
   );
