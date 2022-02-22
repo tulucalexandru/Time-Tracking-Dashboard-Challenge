@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Card from "./Card";
 import FlexContainer from "../General/FlexContainer";
+// import img from '../../assets/icon-work.svg';
 
 
 const StyledSmallCardsContainer = styled(FlexContainer)`
@@ -20,7 +21,7 @@ const SmallCardsContainer = (props) => {
 
   return (
     <StyledSmallCardsContainer>
-      {props.data.map((item, index) => <Card key={index} item={item} bgColor={item.bgcolor}/> )}
+      {props.data.map((item, index) => <Card img={require('../../assets/images/icon-work.svg').default} key={index} item={item} bgColor={item.bgcolor}/> )}
     </StyledSmallCardsContainer>
   );
 };

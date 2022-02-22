@@ -12,8 +12,8 @@ const Button = (props) => {
 
 const clickHandler = (event) => {
   // console.log(event.target.outerText);
-  props.clickHandler(event.target.value);
-  event.target.classList.add('active');
+  props.clickHandler(event.target.value, event);
+  // event.target.classList.add('active');
 }
 
   return (

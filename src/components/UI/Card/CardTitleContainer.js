@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import FlexContainer from '../General/FlexContainer';
-import dots from '../../assets/icon-ellipsis.svg';
+import dots from '../../assets/images/icon-ellipsis.svg';
 
 const StyledTitleContainer = styled(FlexContainer)`
     justify-content: space-between;

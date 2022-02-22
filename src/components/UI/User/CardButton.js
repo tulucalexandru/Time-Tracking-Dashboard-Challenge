@@ -24,20 +24,28 @@ const StyledCardButton = styled(Button)`
   & + & {
     margin-top: 10px;
   }
+
+  @media (max-width: 1100px) {
+    margin: 0; 
+    & + & {
+    margin-top: 0px;
+  }
+  }
 `;
 
 const CardButton = (props) => {
-  const clickHandler = (item) => {
-    // console.log(item);
+  const clickHandler = (item, event) => {
+    console.log(event);
     props.clickHandler(item);
-    let buttons = document.getElementsByTagName("button");
+    let buttons = document.getElementsByClassName(event.target.classList.value);
     for (let i = 0; i < buttons.length; i++) {
       buttons[i].classList.remove("active");
     };
+    event.target.classList.add('active');
   };
 
   return (
-    <StyledCardButton clickHandler={clickHandler}>
+    <StyledCardButton className={props.children.toLowerCase() ==='weekly' ? 'active' : ''} clickHandler={clickHandler}>
       {props.children}
     </StyledCardButton>
   );

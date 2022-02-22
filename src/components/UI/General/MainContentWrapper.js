@@ -29,7 +29,6 @@ const MainContentWrapper = () => {
   //Set choice for timeframe
   const clickHandler = (item) => {
     setChoice(item.toLowerCase());
-    console.log(choice);
   };
 
   //Filter date based on selected timframe

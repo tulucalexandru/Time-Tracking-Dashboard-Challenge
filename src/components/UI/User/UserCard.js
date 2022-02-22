@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import { Colors } from '../../../GlobalStyles';
-import userImage from "../../assets/image-jeremy.png";
+import userImage from "../../assets/images/image-jeremy.png";
 
 const StyledUserCard = styled.div`
     width: 100%;
@@ -14,6 +14,7 @@ const StyledUserCard = styled.div`
         width: 37.5%;
         border: 3px solid white;
         border-radius: 50%;
+        margin-bottom: 45px;
     }
 
     & p {
@@ -30,6 +31,37 @@ const StyledUserCard = styled.div`
     & h1+h1 {
         margin-top: 1px;
     } */
+
+    @media (max-width: 1100px) {
+        height: 132px;
+   
+        & > p {
+            margin-top: 20px;
+        }
+        &> p {
+            display: inline-block;
+        }
+
+    
+
+        & > h1+h1 {
+            margin-left: 10px;
+        }    
+        
+        & > h1 {
+            display: inline;
+        }
+
+        & h1 {
+            font-size: 22px;
+        }
+
+        & img {
+            float: left;
+            width: 30%;
+            margin-right: 15px;
+        }
+    }
 `
 
 const UserCard = () => {

@@ -18,6 +18,19 @@ const StyledCardDetails = styled(FlexContainer)`
       font-size: 13px;
       color: ${ props => props.paragraphColor };
   }
+
+  @media (max-width: 1100px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    & > h1,p {
+      margin: 10px 0 0 0;
+    }
+
+    & h1 {
+      font-size: 40px;
+    }
+  }
 `;
 
 const CardDetails = (props) => {

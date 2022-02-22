@@ -14,13 +14,18 @@ const StyledCard = styled.div`
   position: absolute;
   bottom: 0;
   transform: translateY(1%);
+  /* z-index: 10; */
+
+  @media (max-width: 1100px) {
+    padding: 20px;
+  }
   
 `;
 
-const Card = ({ item, bgColor }) => {
+const Card = ({ item, bgColor, img }) => {
 
   return (
-    <BackCard bgColor={bgColor}>
+    <BackCard img={img} bgColor={bgColor}>
         <StyledCard bgColor={Colors.darkBlue}>
           <CardTitleContainer title={item.title} />
           <CardDetails details={item.timeframes} />

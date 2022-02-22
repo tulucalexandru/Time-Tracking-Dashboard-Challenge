@@ -12,6 +12,11 @@ const StyledUserBackcard = styled(FlexContainer)`
     width: 253px;
     position: relative;
     border-radius: 25px;
+    overflow: hidden;
+
+    @media (max-width: 1100px) {
+      width: 327px;
+    }
 `
 
 const UserBackCard = (props) => {
