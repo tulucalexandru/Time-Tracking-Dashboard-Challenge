@@ -9,7 +9,7 @@ const StyledWrapper = styled(FlexContainer)`
     align-items: center;
     justify-content: center;
 
-    @media (max-width: 800px) {
+    @media (max-width: 1100px) {
       height: 100%;
       padding-bottom: 25px;
       padding-top: 25px;

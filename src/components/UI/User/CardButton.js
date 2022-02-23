@@ -24,6 +24,10 @@ const StyledCardButton = styled(Button)`
   & + & {
     margin-top: 10px;
   }
+  
+  &:hover {
+    color: white;
+  }
 
   @media (max-width: 1100px) {
     margin: 0; 

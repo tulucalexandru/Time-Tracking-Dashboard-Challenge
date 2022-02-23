@@ -14,7 +14,12 @@ const StyledCard = styled.div`
   position: absolute;
   bottom: 0;
   transform: translateY(1%);
+  cursor: pointer;
   /* z-index: 10; */
+
+  &:hover {
+    background-color: #34397B;
+  }
 
   @media (max-width: 1100px) {
     padding: 20px;

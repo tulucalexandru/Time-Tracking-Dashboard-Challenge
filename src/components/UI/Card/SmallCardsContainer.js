@@ -18,10 +18,11 @@ const StyledSmallCardsContainer = styled(FlexContainer)`
 `;
 
 const SmallCardsContainer = (props) => {
+  // let img = require(props.da[0].bgImage).default;
 
   return (
     <StyledSmallCardsContainer>
-      {props.data.map((item, index) => <Card img={require('../../assets/images/icon-work.svg').default} key={index} item={item} bgColor={item.bgcolor}/> )}
+      {props.data.map((item, index) => <Card img={item.bgImage} key={index} item={item} bgColor={item.bgcolor}/> )}
     </StyledSmallCardsContainer>
   );
 };

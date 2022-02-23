@@ -1,4 +1,4 @@
-[
+const data = [
   {
     "title": "Work",
     "timeframes": {
@@ -15,7 +15,8 @@
         "previous": 128
       }
     },
-    "bgcolor": "hsl(15, 100%, 70%)"
+    "bgcolor": "hsl(15, 100%, 70%)",
+    "bgImage": require("./images/icon-work.svg").default
   },
   {
     "title": "Play",
@@ -33,7 +34,8 @@
         "previous": 29
       }
     },
-    "bgcolor": "hsl(195, 74%, 62%)"
+    "bgcolor": "hsl(195, 74%, 62%)",
+    "bgImage": require("./images/icon-play.svg").default
   },
   {
     "title": "Study",
@@ -51,7 +53,8 @@
         "previous": 19
       }
     },
-    "bgcolor": "hsl(348, 100%, 68%)"
+    "bgcolor": "hsl(348, 100%, 68%)",
+    "bgImage": require("./images/icon-study.svg").default
   },
   {
     "title": "Exercise",
@@ -69,7 +72,8 @@
         "previous": 18
       }
     },
-    "bgcolor": "hsl(145, 58%, 55%)"
+    "bgcolor": "hsl(145, 58%, 55%)",
+    "bgImage": require("./images/icon-exercise.svg").default
   },
   {
     "title": "Social",
@@ -87,7 +91,8 @@
         "previous": 23
       }
     },
-    "bgcolor": "hsl(264, 64%, 52%)"
+    "bgcolor": "hsl(264, 64%, 52%)",
+    "bgImage": require("./images/icon-social.svg").default
   },
   {
     "title": "Self Care",
@@ -105,6 +110,9 @@
         "previous": 11
       }
     },
-    "bgcolor": "hsl(43, 84%, 65%)"
+    "bgcolor": "hsl(43, 84%, 65%)",
+    "bgImage": require("./images/icon-self-care.svg").default
   }
 ]
+
+export default data;

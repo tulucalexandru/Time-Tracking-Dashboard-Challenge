@@ -5,7 +5,7 @@ import SmallCardsContainer from "../Card/SmallCardsContainer";
 import UserBackCard from "../User/UserBackCard";
 
 // Importing data from JSON file
-const data = require("../../../components/assets/data.json");
+import data from "../../assets/data";
 
 const SytledMainContentWrapper = styled(FlexContainer)`
   gap: 30px;
@@ -46,6 +46,8 @@ const MainContentWrapper = () => {
 
    filteredData.push(filteredItem);
   }
+
+  console.log(filteredData);
 
 
   return (
